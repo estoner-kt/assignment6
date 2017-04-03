@@ -1,0 +1,74 @@
+body{
+    background-image: url(img/italy-guide.jpg); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+} 
+.row{
+    background-color: #c12c44;
+
+}
+.container .jumbotron {
+    background-image: url(img/itpizza.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 360px;
+    opacity: 0.99; 
+}
+.container .jumbotron h1
+{
+    color: white; 
+}
+.container .jumbotron p {
+    color: white; 
+}
+.container #logo{
+    width: 23%; 
+    display: block; 
+   
+   
+    margin: 0 auto
+}
+.container img {
+    width: 100%; 
+}
+
+.nav-pills>li.active>a {
+    background-color: limegreen; 
+}
+
+label
+/*{float: left; */{
+width: 10em; 
+text-align: right;
+}
+
+input, select {
+    margin-left: 30px;
+    margin-bottom: 20px; 
+    height: 35px; 
+    width: 300px; 
+}
+
+input[type="radio"] {
+    height: auto;
+    width: auto;
+    margin-right: 5px;
+}
+input[type="checkbox"] {
+    height: auto;
+    width: auto;
+    margin-right: 5px;
+}
+.col-md-4 img {
+    width: 80%; 
+    border: 1px black solid; 
+    box-shadow: 0 0 10px; 
+    border-radius: 10px; 
+}
+.hideme, .hidemeChese, .hidemeSauce{
+    display: none; 
+}
+
+.footer {
+    text-align: center; 
+}

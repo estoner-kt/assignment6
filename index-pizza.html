@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome Pizza</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+<link href="style.css" rel="stylesheet">
+<!--<script src="js/bootstrap.min.js"></script>-->
+
+</head>
+<body>
+       <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active "><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+     
+         <img class="responsive" id="logo" src="img/Logo.png">
+      </div>
+
+      <div class="jumbotron">
+     
+       
+        <h1>Pizza Napoli</h1>
+       
+        <p class="lead">Real Italian!</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Order</a></p>
+      </div>
+      
+<!--
+           <div class="col-md-4">
+              <h3>We always make it fresh for you!</h3>
+               <img src="img/pizzadough-2-superJumbo.jpg">
+           </div>
+-->
+          <div class="row">
+           <div class="col-md-12">
+<h1>Pizza Order</h1>
+   <h2>Contact Information: </h2>
+   
+   <form id="reg" name="registration_form" class="show">
+   
+   <label for="first name">First name:</label>
+ <input type="text" name="FirstName" id="fname"><br>
+ 
+  <label for="last name">Last name:</label>
+ <input type="text" name="LastName" id="lastname"><br>
+   <label for="phone">   Phone Number: </label>
+  <input type="text" name="Phone" id="phone"><br>
+    <label for="email">   Email: </label>
+  <input type="text" name="Email" id="email"><br>
+  
+  
+  <h2>Delivery Adress</h2>
+  
+  <label for="zip"> Zip Code </label>
+ <input type="text" name="Zipcode" id="zip"><br>
+   <label for="state"> State </label>
+    <input type="text" name="State" id="state"><br>
+     <label for="city">  City: </label>
+   <input type="text" name="City" id="city"><br>
+   
+   
+   <label for="adress">  Adress Type: </label>
+
+  <select name="addrestype">
+    <option value="house">House</option>
+    <option value="apartment">Apartment</option>
+    <option value="office">Office</option>
+    <option value="campus">Campus</option>
+     <option value="hotel">Hotel</option>
+    <option value="dorm">Dorm</option>
+    <option value="other">Other</option>
+  </select>
+    
+ <label for="other">  Other: </label>
+ <input type="text" name="other"><br>
+  
+<input type="submit" value="Submit" id="submitme">
+</form>
+    
+              </div>
+           </div> 
+    
+
+      
+<!--      ORDER PIZZA
+------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+  <div class="row">
+          <div class="col-md-6">
+              <img src="img/pizza-slice.png">
+              
+          </div>
+          
+          <h1>Select Your Pizza</h1>
+           <div class="col-md-5">
+
+
+     <h2>Select dough</h2>
+      
+       <form action="">
+  <input data-input="options" type="radio" id="hand" name="pizza" value="handtossed ">Hand Tossed <br>
+  <input data-input="options1" type="radio" id="thin" name="pizza" value="thin crust">Thin Crust <br>
+  <input data-input="options2" type="radio" id="ny" name="pizza" value="newyorkr">New York Style <br>
+   <input data-input="options3" type="radio" id="gf"  name="pizza" value="gf"> Gluten Free 
+</form>
+
+
+
+<select id="options"   class="hideme"></select>
+<select id="options1" class="hideme"></select>
+<select id="options2" class="hideme"></select>
+<select id="options3" class="hideme"></select>
+      
+<!--  <h1 id="cheese" class="hidemeChesese">Select Chese</h1>  -->
+<select id="cheese" class="hidemeChese">
+    <option>Cheese: Light ($0.0)</option>
+    <option>Cheese: Regular ($0.0)</option>
+    <option>Cheese: Extra ($2.99)</option>
+    <option>Cheese: Double ($3.99)</option>
+</select>
+     
+       
+<select id="sauce" class="hidemeSauce">
+    <option>Sause: Regular Tomato ($0.0)</option>
+    <option>Sause: Hearty Tomato ($0.99)</option>
+    <option>Sause:BBQ ($1.99)</option>
+  
+</select>  
+      
+      <h1>Add's on $.99 each</h1>
+      <form>
+          <input type="checkbox" name="pepperoni"> pepperoni <br>
+          <input type="checkbox" name="sausage"> sausage <br>
+          <input type="checkbox" name="ham"> ham <br>
+          <input type="checkbox" name="bacon"> bacon <br>
+          <input type="checkbox" name="salami"> salami <br>
+          <input type="checkbox" name="peppers"> peppers <br>
+          <input type="checkbox" name="olives"> olives <br>
+          <input type="checkbox" name="jalapenos"> jalapenos <br>
+          <input type="checkbox" name="mushrooms"> mushrooms <br>
+          <input type="checkbox" name="pineapple"> pineapple <br>
+          <input type="checkbox" name="onion"> onion <br> 
+  </form>
+  </div>
+</div>    
+        
+<div class="row">
+    <div class="col-md-5">
+   
+          <h1>Order total:</h1>
+          <form id="calc">
+              <input type="text" name="calc" id="totaltotal">
+          </form>
+ 
+    </div>
+</div>
+
+        
+        
+
+      <footer class="footer">
+        <p>&copy; 2017 Pizza Napoli| Designed by Kate S</p>
+      </footer>
+   
+<!--    </div>  /container -->
+   <script src="js/validate.js"></script>
+   <script src="js/selectpizza.js"></script>
+</body>
+</html>
